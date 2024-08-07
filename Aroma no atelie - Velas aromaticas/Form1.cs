@@ -46,5 +46,10 @@ namespace Aroma_no_atelie___Velas_aromaticas
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
