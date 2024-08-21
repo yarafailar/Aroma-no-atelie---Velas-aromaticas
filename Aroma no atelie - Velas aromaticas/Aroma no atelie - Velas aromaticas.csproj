@@ -66,6 +66,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,6 +80,63 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GettyImages-547163556.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_77030559-stock-photo-candles-with-lavender-flowers-on.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yarasvelas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GettyImages-5471635561.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\028f342040e7f40d163c4277a7c80cd5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\velas-aromaticas-con-cascaras-de-frutas-limones.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s8nxy6x9osx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sif-cd5269__2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-flame-2381987_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00000654CC-000023A6AD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vela vela.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
