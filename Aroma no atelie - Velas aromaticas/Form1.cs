@@ -33,5 +33,23 @@ namespace Aroma_no_atelie___Velas_aromaticas
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string nome = cbx2.Text;
+            string tamanho = cbx3.Text;
+            string descricao = cbx4.Text;
+            float preco = float.Parse(txt1.Text);
+
+            Vela vela = new Vela(nome, tamanho, descricao, preco);
+            VelaDAO veladao = new VelaDAO();
+            veladao.Insert(vela);
+
+            cbx2.SelectedIndex = 0;
+            cbx3.();
+            cbx4.Clear(); 
+            txt1.Clear(); 
+
+        }
     }
 }
