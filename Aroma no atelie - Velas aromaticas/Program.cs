@@ -16,7 +16,7 @@ namespace Aroma_no_atelie___Velas_aromaticas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormVela());
         }
     }
 }

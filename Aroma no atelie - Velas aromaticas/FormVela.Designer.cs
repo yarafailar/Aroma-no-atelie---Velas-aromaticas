@@ -28,58 +28,139 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.components = new System.ComponentModel.Container();
+            this.txbtamanho = new System.Windows.Forms.TextBox();
+            this.txbnome = new System.Windows.Forms.TextBox();
+            this.txbpreco = new System.Windows.Forms.TextBox();
+            this.txbdescricao = new System.Windows.Forms.TextBox();
+            this.lblnome = new System.Windows.Forms.Label();
+            this.lbltamanho = new System.Windows.Forms.Label();
+            this.lblpreco = new System.Windows.Forms.Label();
+            this.lbldescricao = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.bttsalvar = new System.Windows.Forms.Button();
+            this.ltvvela = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
-            // textBox1
+            // txbtamanho
             // 
-            this.textBox1.Location = new System.Drawing.Point(27, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Tamanho da Vela:";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txbtamanho.Location = new System.Drawing.Point(127, 109);
+            this.txbtamanho.Name = "txbtamanho";
+            this.txbtamanho.Size = new System.Drawing.Size(258, 20);
+            this.txbtamanho.TabIndex = 0;
+            this.toolTip1.SetToolTip(this.txbtamanho, "só utilize peso em gramas");
             // 
-            // textBox2
+            // txbnome
             // 
-            this.textBox2.Location = new System.Drawing.Point(27, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Nome da Vela:";
+            this.txbnome.Location = new System.Drawing.Point(127, 79);
+            this.txbnome.Name = "txbnome";
+            this.txbnome.Size = new System.Drawing.Size(258, 20);
+            this.txbnome.TabIndex = 1;
             // 
-            // textBox3
+            // txbpreco
             // 
-            this.textBox3.Location = new System.Drawing.Point(27, 242);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
-            this.textBox3.Text = "Preço (R$): ";
+            this.txbpreco.Location = new System.Drawing.Point(127, 242);
+            this.txbpreco.Name = "txbpreco";
+            this.txbpreco.Size = new System.Drawing.Size(258, 20);
+            this.txbpreco.TabIndex = 2;
             // 
-            // textBox4
+            // txbdescricao
             // 
-            this.textBox4.Location = new System.Drawing.Point(27, 146);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
-            this.textBox4.Text = "Descrição da Vela:";
+            this.txbdescricao.Location = new System.Drawing.Point(127, 146);
+            this.txbdescricao.MaxLength = 256;
+            this.txbdescricao.Multiline = true;
+            this.txbdescricao.Name = "txbdescricao";
+            this.txbdescricao.Size = new System.Drawing.Size(258, 79);
+            this.txbdescricao.TabIndex = 3;
             // 
-            // listBox1
+            // lblnome
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
-            "VELA DE MORANGO: Para os amantes da fruta morango e que amam o seu cheiro",
-            " doce e suave, poderá se apaixonar por essa vela aromática. ",
-            "  A \"Vela Aromática de Morango\" tem um cheiro adocicado e leve,",
-            " perfeito para quem tem sensibilidade a feiros muito fortes."});
-            this.listBox1.Location = new System.Drawing.Point(133, 146);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(410, 69);
-            this.listBox1.TabIndex = 4;
+            this.lblnome.AutoSize = true;
+            this.lblnome.Location = new System.Drawing.Point(27, 82);
+            this.lblnome.Name = "lblnome";
+            this.lblnome.Size = new System.Drawing.Size(74, 13);
+            this.lblnome.TabIndex = 7;
+            this.lblnome.Text = "Nome da Vela";
+            // 
+            // lbltamanho
+            // 
+            this.lbltamanho.AutoSize = true;
+            this.lbltamanho.Location = new System.Drawing.Point(27, 109);
+            this.lbltamanho.Name = "lbltamanho";
+            this.lbltamanho.Size = new System.Drawing.Size(91, 13);
+            this.lbltamanho.TabIndex = 8;
+            this.lbltamanho.Text = "Tamanho da Vela";
+            // 
+            // lblpreco
+            // 
+            this.lblpreco.AutoSize = true;
+            this.lblpreco.Location = new System.Drawing.Point(27, 249);
+            this.lblpreco.Name = "lblpreco";
+            this.lblpreco.Size = new System.Drawing.Size(100, 13);
+            this.lblpreco.TabIndex = 9;
+            this.lblpreco.Text = "Preço da Vela (R$):";
+            // 
+            // lbldescricao
+            // 
+            this.lbldescricao.AutoSize = true;
+            this.lbldescricao.Location = new System.Drawing.Point(27, 146);
+            this.lbldescricao.Name = "lbldescricao";
+            this.lbldescricao.Size = new System.Drawing.Size(94, 13);
+            this.lbldescricao.TabIndex = 10;
+            this.lbldescricao.Text = "Descricao da Vela";
+            // 
+            // bttsalvar
+            // 
+            this.bttsalvar.Location = new System.Drawing.Point(310, 372);
+            this.bttsalvar.Name = "bttsalvar";
+            this.bttsalvar.Size = new System.Drawing.Size(75, 23);
+            this.bttsalvar.TabIndex = 11;
+            this.bttsalvar.Text = "Salvar";
+            this.bttsalvar.UseVisualStyleBackColor = true;
+            this.bttsalvar.Click += new System.EventHandler(this.bttsalvar_Click);
+            // 
+            // ltvvela
+            // 
+            this.ltvvela.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4,
+            this.columnHeader5});
+            this.ltvvela.HideSelection = false;
+            this.ltvvela.Location = new System.Drawing.Point(435, 79);
+            this.ltvvela.Name = "ltvvela";
+            this.ltvvela.Size = new System.Drawing.Size(604, 179);
+            this.ltvvela.TabIndex = 12;
+            this.ltvvela.UseCompatibleStateImageBehavior = false;
+            this.ltvvela.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "ID";
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Nome";
+            this.columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Tamanho";
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Descricao";
+            this.columnHeader4.Width = 300;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Preço";
             // 
             // FormVela
             // 
@@ -87,11 +168,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(1088, 496);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ltvvela);
+            this.Controls.Add(this.bttsalvar);
+            this.Controls.Add(this.lbldescricao);
+            this.Controls.Add(this.lblpreco);
+            this.Controls.Add(this.lbltamanho);
+            this.Controls.Add(this.lblnome);
+            this.Controls.Add(this.txbdescricao);
+            this.Controls.Add(this.txbpreco);
+            this.Controls.Add(this.txbnome);
+            this.Controls.Add(this.txbtamanho);
             this.Name = "FormVela";
             this.Text = "FormVela";
             this.Load += new System.EventHandler(this.FormVela_Load);
@@ -102,10 +188,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.TextBox txbtamanho;
+        private System.Windows.Forms.TextBox txbnome;
+        private System.Windows.Forms.TextBox txbpreco;
+        private System.Windows.Forms.TextBox txbdescricao;
+        private System.Windows.Forms.Label lblnome;
+        private System.Windows.Forms.Label lbltamanho;
+        private System.Windows.Forms.Label lblpreco;
+        private System.Windows.Forms.Label lbldescricao;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button bttsalvar;
+        private System.Windows.Forms.ListView ltvvela;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }

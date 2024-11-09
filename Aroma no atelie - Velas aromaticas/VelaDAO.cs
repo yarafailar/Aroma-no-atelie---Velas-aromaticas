@@ -30,7 +30,7 @@ namespace Aroma_no_atelie___Velas_aromaticas
             Command.Parameters.AddWithValue("@nome", vela.NomeVela);
             Command.Parameters.AddWithValue("@tamanho", vela.TamanhoVela);
             Command.Parameters.AddWithValue("@descricao", vela.DescricaoVela);
-            Command.Parameters.AddWithValue("@nome", vela.NomeVela);
+            Command.Parameters.AddWithValue("@preco", vela.PrecoVela);
 
 
             try
@@ -41,7 +41,7 @@ namespace Aroma_no_atelie___Velas_aromaticas
             catch (Exception err)
             {
                 throw new Exception("Erro: Problemas ao inserir " +
-                    "imóvel no banco.\n" + err.Message);
+                    "vela no banco.\n" + err.Message);
             }
             finally
             {
@@ -92,13 +92,13 @@ namespace Aroma_no_atelie___Velas_aromaticas
                 Connect.CloseConnection();
             }
         }
-        public List<Vela> ListarTodosUsuarios()
+        public List<Vela> ListarTodasVelas()
         {
 
             Command.Connection = Connect.ReturnConnection();
-            Command.CommandText = "SELECT * FROM Usuarios";
+            Command.CommandText = "SELECT * FROM vela";
 
-            List<Vela> listaDeUsuarios = new List<Vela>(); //Instancio a list com o tamanho padrão.
+            List<Vela> listaDeVelas = new List<Vela>(); //Instancio a list com o tamanho padrão.
             try
             {
                 SqlDataReader rd = Command.ExecuteReader();
@@ -108,8 +108,8 @@ namespace Aroma_no_atelie___Velas_aromaticas
                 {
                     Vela vela = new Vela((int)rd["CodVela"],
                         (string)rd["NomeVela"], (string)rd["TamanhoVela"], (string)rd["DescricaoVela"],
-                        (float)rd["PrecoVela"]);
-                    listaDeUsuarios.Add(vela);
+                        (decimal)rd["PrecoVela"]);
+                    listaDeVelas.Add(vela);
                 }
                 rd.Close();
             }
@@ -122,7 +122,7 @@ namespace Aroma_no_atelie___Velas_aromaticas
                 Connect.CloseConnection();
             }
 
-            return listaDeUsuarios;
+            return listaDeVelas;
         }
     }
 }

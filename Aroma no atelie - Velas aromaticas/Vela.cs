@@ -12,14 +12,14 @@ namespace Aroma_no_atelie___Velas_aromaticas
         public string NomeVela { get; set; }
         public string TamanhoVela { get; set; }
         public string DescricaoVela { get; set; }
-        public float PrecoVela { get; set; }
+        public decimal PrecoVela { get; set; }
 
-        public Vela(int codvela, string nome, string tamanho, string descricao, float preco): this(nome, tamanho, descricao,preco)
+        public Vela(int codvela, string nome, string tamanho, string descricao, decimal preco): this(nome, tamanho, descricao,preco)
         {
            CodVela = codvela;
 
         }
-        public Vela(string nome, string tamanho, string descricao, float preco)
+        public Vela(string nome, string tamanho, string descricao, decimal preco)
         {
             NomeVela = nome;
             TamanhoVela = tamanho;
