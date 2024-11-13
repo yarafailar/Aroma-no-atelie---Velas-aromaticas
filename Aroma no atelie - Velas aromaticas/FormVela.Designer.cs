@@ -116,7 +116,7 @@
             // 
             // bttsalvar
             // 
-            this.bttsalvar.Location = new System.Drawing.Point(310, 372);
+            this.bttsalvar.Location = new System.Drawing.Point(545, 377);
             this.bttsalvar.Name = "bttsalvar";
             this.bttsalvar.Size = new System.Drawing.Size(75, 23);
             this.bttsalvar.TabIndex = 11;
@@ -132,6 +132,7 @@
             this.columnHeader3,
             this.columnHeader4,
             this.columnHeader5});
+            this.ltvvela.FullRowSelect = true;
             this.ltvvela.HideSelection = false;
             this.ltvvela.Location = new System.Drawing.Point(435, 79);
             this.ltvvela.Name = "ltvvela";
@@ -139,6 +140,7 @@
             this.ltvvela.TabIndex = 12;
             this.ltvvela.UseCompatibleStateImageBehavior = false;
             this.ltvvela.View = System.Windows.Forms.View.Details;
+            this.ltvvela.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ltvvela_MouseDoubleClick);
             // 
             // columnHeader1
             // 
